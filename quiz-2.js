@@ -6,6 +6,6 @@ Constraint:
 
 1 <= month <= 12`
 
-module.exports = function(month) {
+module.exports = function quarterOf(month) {
     return "Hello World!";
 };
