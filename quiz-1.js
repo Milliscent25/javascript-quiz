@@ -7,5 +7,14 @@ The returned format must be correct in order to complete this challenge.
 Don't forget the space after the closing parentheses!`
 
 module.exports = function createPhoneNumber(numbers) {
-    return "Hello World!";
-};
+    var format = "(xxx) xxx-xxxx";
+    
+    for(var i = 0; i < numbers.length; i++)
+    {
+      format = format.replace('x', numbers[i]);
+    }
+    
+    return format;};
+
+
+

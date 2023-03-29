@@ -16,6 +16,14 @@ Examples:
 -->
 "####################################man!"`
 
+
 module.exports = function maskify(cc) {
-    return "Hello World!";
+    let masked = '';
+    let lastFour = cc.substr(-4);
+
+  for (var i = 0; i < cc.length - 4; i++) {
+    masked += '#';
+    
 };
+   return masked + lastFour;
+}
